@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Formulaire de Présence</title>
+ <style>
+  body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
+.container {
+  width: 80%;
+  margin: 50px auto;
+  background-color: #acd2f0;
+  border-radius: 20px;
+}
+
+form {
+  border: 1px solid #ccc;
+  padding: 20px;
+  border-radius: 5px;
+}
+
+label {
+  display: block;
+  margin-bottom: 10px;
+}
+
+select {
+  width: 100%;
+  padding: 8px;
+  margin-bottom: 15px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+}
+
+button {
+  background-color: #4CAF50;
+  color: white;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  float: right;
+}
+input[type="password"] {
+    width: calc(100% - 20px);
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+button:hover {
+  background-color: #45a049;
+}
+body{
+    background-image: url('home.jpg');
+    background-size: cover; 
+        background-repeat: no-repeat; 
+}
+h1 {
+    font-size: 32px; /* Taille de la police */
+    font-weight: bold; /* Graisse de la police (en gras) */
+    color: #333; /* Couleur du texte */
+    text-align: center; /* Alignement du texte au centre */
+    margin-bottom: 20px; /* Marge en bas pour l'espace */
+}
+
+ </style>
+</head>
+<body>
+  <div class="container">
+    <h1>Formulaire de Présence</h1>
+    <form method="post" action="noter.php">
+      <label for="web">web :</label>
+      <select name="p_web">
+        <option value="present">Présent</option>
+        <option value="absent">Absent</option>
+      </select><br>
+
+      <label for="systeme dinfo">systeme dinfo:</label>
+      <select name="p_si">
+        <option value="present">Présent</option>
+        <option value="absent">Absent</option>
+      </select><br>
+
+      <label for="systeme dexploitation">systeme dexploitation:</label>
+      <select name="p_se">
+        <option value="present">Présent</option>
+        <option value="absent">Absent</option>
+      </select><br>
+      
+      <label for="base de donnee">base de donnee:</label>
+      <select name="p_bd">
+        <option value="present">Présent</option>
+        <option value="absent">Absent</option>
+      </select><br>
+
+      <label for="programmation avancee">programmation avancee:</label>
+      <select name="p_pa">
+        <option value="present">Présent</option>
+        <option value="absent">Absent</option>
+      </select><br>
+      <input placeholder="code" type="password" name="code" id="code">
+      <button type="submit">Soumettre</button>
+
+      
+    </form>
+  </div>
+</body>
+</html>
